@@ -1,0 +1,227 @@
+\usepackage{extsizes}
+\usepackage{cmap} % для кодировки шрифтов в pdf
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}%Языки используемые в документе
+\usepackage{ucs}
+\usepackage[pdftex]{graphicx} % для вставки картинок
+\graphicspath{{images/}}%Папка с изображениями
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.bmp}%Установка форматов изображений
+
+
+\usepackage[nooneline]{caption}% Переопределение заголовков рисунков и таблиц
+%\RequirePackage{caption}
+	\DeclareCaptionLabelSeparator{defffis}{ -- }%Установка дефиса
+	
+
+\captionsetup[table]{labelsep=defffis,justification=raggedright,singlelinecheck=false,font=normalsize}
+\captionsetup[figure]{justification=centering,labelsep=defffis,name=Рисунок} 
+
+
+
+
+
+
+\usepackage{floatrow} % плавающие обьекты, крутые оформления названий рисунков и тп.
+\floatsetup[table]{style=Plaintop} %Название таблицы сверху
+\usepackage{setspace} 
+\usepackage{nomencl} % список сокращений
+\usepackage{pdfpages} %для вставки пдф страниц
+\usepackage{longtable} % Подключение переносимых автоматически таблиц
+\usepackage{amssymb,amsfonts,amsmath,amsthm} % математические дополнения от АМС
+\usepackage{indentfirst} % отделять первую строку раздела абзацным отступом тоже
+\usepackage{color} % названия цветов [usenames,dvipsnames,table,xcdraw,hyperref]
+%\usepackage[table,xcdraw,hyperref]{xcolor} %цвета
+%\usepackage{makecell}
+%\usepackage{multirow} % улучшенное форматирование таблиц
+\usepackage{ulem} % подчеркивания
+\usepackage{import}% Импорт файлов
+\usepackage{float} % Расширенное управление плавающими объектами
+\usepackage{lscape}  % Повороты листа
+
+%Графики и схемы
+\usepackage{tikz} % Рисование графиков и тд.
+\usetikzlibrary{graphs}
+% Блок-схема определяет основную форму
+\tikzstyle{main} = [rectangle, minimum width = 2cm, minimum height=1cm,text centered, draw = black]
+\tikzstyle{mainr} = [rectangle, rounded corners, minimum width = 2cm, minimum height=1cm,text centered, draw = black]
+ % Форма стрелки
+\tikzstyle{arrow} = [ultra thick,->,>=stealth]
+
+% Графики функций
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.9}
+
+
+
+% Определение размеров полей
+\usepackage{geometry}
+	\geometry{left=3cm}
+	\geometry{right=1.5cm}
+	\geometry{top=2cm}
+	\geometry{bottom=2cm}
+		
+%Установка шрифтов
+\usepackage{xltxtra} % fontspec %пакет хелатех для таймс нью роман
+\setmainfont{Times New Roman} % таймс нью роман
+%\defaultfontfeatures{Ligatures=TeX,Mapping=tex-text}
+
+\frenchspacing
+\pagestyle{plain}
+\linespread{1} % полуторный интервал
+\setlength{\parindent}{1.27cm} % Абзацный отступ
+\setlength{\parskip}{0pt}
+\sloppy % указывает, что с залезанием слов на поля следует бороться, даже применяя недопустимо длинные пробелы.
+
+\usepackage{hyperref} %Ссылки
+\definecolor{linkcolor}{HTML}{000000} % цвет ссылок (черный)
+\definecolor{urlcolor}{HTML}{0000ff} % цвет гиперссылок
+
+ 
+%Библиография
+%\usepackage{biblatex}
+\usepackage[square,numbers,sort&compress]{natbib}
+\renewcommand{\bibnumfmt}[1]{#1.\hfill} % нумерация источников в самом списке — через точку
+\renewcommand{\bibsection}{\centering{\section*{Список использованных источников}}} % заголовок специального раздела
+
+% изменял 12.04.2024
+\setlength{\bibsep}{1pt} %было 0pt и писало: 
+%Undefined control sequence.
+%Missing number, treated as zero
+% Illegal unit of measure (pt inserted)
+
+%\bibliographystyle{gost780u}
+\bibliographystyle{unsrt} % стиль цитат
+%\bibliographystyle{gost-numeric}
+%\bibliographystyle{vak} % стиль под гост с https://academics.hse.ru/bibliography/bibtex_manual/2.4.bibtex_styles
+
+
+\usepackage{tocloft} %регулировка расположения TableOfContent (Оглавления) на странице
+% % Отточия в Оглавлении
+%\renewcommand\cftchapdotsep{\cftdot} %добавляет отточия после \chapter{title}
+\renewcommand\cftsecdotsep{\cftdot} %делает отточия после \section{title} частыми.
+
+
+
+\makeatletter
+\renewcommand{\l@section}{\@dottedtocline{1}{0em}{1.25em}}
+\renewcommand{\l@subsection}{\@dottedtocline{2}{1.25em}{1.75em}}
+\renewcommand{\l@subsubsection}{\@dottedtocline{3}{2.75em}{2.6em}}
+\makeatother
+
+\usepackage{titlesec}    
+
+% красивый блок настроек
+
+%Раньше писал \shape перед \thesection и т.д., не понимаю зачем это, выдавала ошибку - непонятное выражение
+\titleformat{\section}[block]{\Large\bfseries\filcenter}{\thesection}{1em}{}
+\titleformat{\subsection}[block]{\large\normalfont\bfseries\filcenter}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}[block]{\normalfont\bfseries\filcenter}{\thesubsubsection}{1em}{}
+\titleformat{\paragraph}[block]{\normalfont\bfseries}{\theparagraph}{1em}{}
+\titleformat{\subparagraph}[runin]{\normalfont\bfseries}{\thesubparagraph}{1em}{}
+
+%%%
+
+%%%
+% Кастомный блок настроек для заметок
+%\titleformat{name=\section}[block]
+%  {\color{black}\bfseries}
+%  {}
+%  {0pt}
+%  {\colorsection}
+%\titleformat{name=\subsection}[block]
+%  {\color{black}\bfseries}
+%  {}
+%  {0pt}
+%  {\colorsubsection}
+  
+%\newcommand{\colorsection}[1]{%
+%  \fcolorbox{black}{cyan!20}{\parbox{\dimexpr\columnwidth-2\fboxsep-2\fboxrule\relax}{\strut~#1\strut}}}
+%\newcommand{\colorsubsection}[1]{%
+%  \fcolorbox{black}{yellow!25}{\parbox{\dimexpr\columnwidth-2\fboxsep-2\fboxrule\relax}{\strut~#1\strut}}}
+%%%%
+
+
+
+%\S\thesection
+% оформляет номер как парагрф Ы
+
+
+
+
+%\titleformat{\subsubsection}[block]{\normalfont\bfseries\filcenter}{}{1em}{}
+
+
+%Блок настроек, который с меня требовал щучкин в бакалавриате
+
+%\titlespacing{\section}{0pt}{1.4pt}{1.4pt}
+%\titlespacing{\subsection}{0pt}{1.4pt}{1.4pt}
+%\titlespacing{\subsubsection}{0pt}{1.4pt}{1.4pt}
+
+
+%\titleformat{\section}[block]{\filcenter}{\centering}{\thesection}{\textbf}
+%\titleformat{\subsection}[block]{\filcenter}{\centering}{\thesubsection}{\textbf}
+%\titleformat{\subsubsection}[block]{\filcenter}{\centering}{}{\textbf}
+
+% Тоже самое с параграфами
+%\titleformat{\paragraph}[block]{\normalfont\bfseries}{\theparagraph}{1em}{}
+%\titleformat{\subparagraph}[runin]{\normalfont\bfseries}{\thesubparagraph}{1em}{}
+
+%\renewcommand{\aftersection}{6pt plus .1pt}
+
+%Списки
+
+%Настройка отступов в списках enumerate
+\makeatletter
+\let\old@enumerate=\enumerate
+\def\enumerate{\old@enumerate
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\leftskip}{0pt}
+}\makeatother
+
+
+%Настройка отступов в списках itemize
+%\makeatletter
+%\let\old@itemize=\itemize
+%\def\itemize{\old@itemize
+%\setlength{\itemsep}{0pt}
+%\setlength{\parskip}{0pt}
+%\setlength{\leftskip}{0pt}
+%\makeatother
+
+%маркеры списков
+%\renewcommand{\labelitemi}{--}      % Маркер списка --
+%\renewcommand{\labelenumi}{--}      % Список второго уровня
+%\renewcommand{\labelenumii}{--}     % Список третьего уровня
+    %\renewcommand{\labelenumi}{\asbuk{enumi})}    % Список второго уровня
+    %\renewcommand{\labelenumii}{\arabic{enumii})} % Список третьего уровня
+%Нумерация цифрами
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}.}
+
+
+
+\usepackage{circuitikz} %Принципиальные схемы
+
+%Листинг кода
+\usepackage{listings}
+
+\lstset{
+	language=C++,
+	numbers=left, 
+	stepnumber=1, 
+	numberstyle=\normalfont,
+	numbersep=15pt,
+	firstnumber = 1,
+	linerange=1-100,
+	frame=single,
+	frameround = tttt,
+	breaklines=true,
+	framesep=10pt,
+	xleftmargin=1em,
+	keepspace=true,
+	%extendedchars=true,
+	commentstyle=\scriptsize}
+
+
+\usepackage{bookmark} %%

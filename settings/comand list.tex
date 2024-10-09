@@ -1,0 +1,22 @@
+% Оглавление
+\newcommand{\mtableofcontents}{
+\thispagestyle{empty}
+    \begin{center}
+		\tableofcontents
+	\end{center}
+\newpage}
+
+%ОПРЕДЕЛЕНИЯ, ОБОЗНАЧЕНИЯ И СОКРАЩЕНИЯ
+%Перечень сокращений и обозначений
+%Не работает корректно
+% Список сокращений
+%Определения, обозначения и сокращения
+\newcommand{\sokraseniya}{
+    \thispagestyle{empty}
+    \renewcommand{\nomname}{Перечень сокращений и обозначений}
+    \makenomenclature
+    \addcontentsline{toc}{section}{Перечень сокращений и обозначений}
+    \newcommand*{\nom}[2]{##1\nomenclature{##1}{##2}}
+    \begin{center} \printnomenclature[5em] \newpage \end{center}
+}
+

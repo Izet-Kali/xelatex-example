@@ -1,0 +1,182 @@
+\section{Рисунки}
+
+\begin{figure}[H]
+ 	\centering
+ 	    \fbox{\includegraphics[width=0.7\linewidth]{test.png}}
+ 	    \caption{test}
+ 	    \label{image:test}
+\end{figure}
+
+
+\section{Блок-схемы}
+%block-diagram
+\begin{figure}[H]
+\centering
+\fbox{\begin{tikzpicture}[node distance = 2.5cm, auto]
+
+\node[main] (o1) {Установка полетного контроллера}
+
+\node[main, below of = o1] (o2) {Установка контроллеров двигателя}
+\node[main, below of = o2] (o3) {Установка приемного модуля}
+\node[main, below of = o3] (o4) {Монтаж кабелей}
+
+
+
+\draw[->,very thick] (o1) -- (o2);
+\draw[->,very thick] (o2) -- (o3);
+\draw[->,very thick] (o3) -- (o4);
+
+\end{tikzpicture}}
+\caption{ }
+\label{image:test1}
+\end{figure}
+
+
+%diagram
+\begin{tikzpicture}
+    \graph[nodes={align=center}, grow down sep, branch right sep]{
+    1 -> 
+    {
+    2, 3
+    }
+    };
+\end{tikzpicture}
+
+
+
+% Принципиальные и не очень схемы
+\begin{figure}[H]
+\centering
+\fbox{\begin{circuitikz}[node distance = 2cm]
+%\ctikzset{arrow={Triangle}}
+\ctikzset{european}
+
+
+ 
+%\node[]{}(t1)  \node[left of = t1]{$Q_{(t)}$};
+\node[bareRXantenna, box only, fill=cyan, anchor=waves](Antena){2.4 - 2.6 ГГц}
+%\node[waves, left of = Antena](waves){2.4 - 2.6 ГГц}
+
+\node[below of = Antena, twoportshape, t =ПМ, boxed, fill = yellow!95!black,] (n0){}
+
+\node[twoportshape, below of = n0, t = ПК, fill= yellow!95!black,] (n1){}
+\node[twoportshape, right of = n1, xshift = 2 cm, t = ESC, fill= yellow!10!green] (esc1) {}
+\node[twoportshape, below of = esc1, t = ESC, fill= yellow!10!green] (esc2) {}
+\node[twoportshape, below of = esc2, t = ESC, fill= yellow!10!green] (esc3) {}
+\node[twoportshape, below of = esc3, t = ESC, fill= yellow!10!green] (esc4) {}
+
+
+\node[elmech, right of= esc1, fill=gray!15](m1){M1}
+\node[elmech, right of= esc2, fill=gray!15](m2){M2}
+\node[elmech, right of= esc3, fill=gray!15](m3){M3}
+\node[elmech, right of= esc4, fill=gray!15](m4){M4}
+
+
+\draw[->,Triangle] (Antena) --  (n0);
+\draw[->,Triangle] (n0) -- (n1);
+\draw[->,Triangle] (n1) -- (esc1); \draw[->,Triangle] (esc1) -- (m1);
+\draw[->,Triangle] (n1) |- (esc2); \draw[->,Triangle] (esc2) -- (m2);
+\draw[->,Triangle] (n1) |- (esc3); \draw[->,Triangle] (esc3) -- (m3);
+\draw[->,Triangle] (n1) |- (esc4); \draw[->,Triangle] (esc4) -- (m4);
+
+\end{circuitikz}
+
+}
+\caption{Структурная схема}
+\label{image:mr1}
+\end{figure}
+
+
+
+
+% Таблицы
+
+
+\begin{longtable}{|p{6cm}|p{3cm}|p{5cm}|}
+\hline
+\textbf{Название} & \textbf{Сокращение} & \textbf{Децимальный номер}\\
+\hline
+\endfirsthead    % Первые ячейки начала таблицы
+\hline
+\textbf{Название} & \textbf{Сокращение} & \textbf{Децимальный номер}\\
+\hline
+\endhead
+
+АКБ & & \\ \hline
+Рама - SPARKHOBBY F450 & &\\ \hline
+Мотор - Emax ECOII 2306 2400kv & &\\ \hline
+ESC - контроллер двигателя & КД, ESC & 466369\\ \hline
+Полетный контроллер & ПК & \\ \hline
+Приемник - ELRS mini 2.4 ГГц RX SX1280 & ПМ& \\ \hline
+
+\end{longtable}
+
+
+% формулы
+
+\begin{equation}
+    X_c = \frac{1}{j\omega C}
+\end{equation}
+
+\begin{equation*}
+    X_c = \frac{1}{j\omega C}
+\end{equation*}
+
+
+
+% графики
+
+% график по координатам
+
+
+
+\begin{figure}[H]
+    \centering
+    \fbox{
+        \begin{tikzpicture}
+            \begin{axis}[grid = major,
+            %grid = both,
+                xlabel = {$f$ [ГЦ]},
+                ylabel = {$U$ [Вольт]},
+                %xmin = 0,
+                %xmax = 30,
+            ]
+            \addplot[black] coordinates {
+(50,1.00039259179737)
+(100,1.00157609427361)
+(150,1.00356790340693)
+(200,1.00639774350291)
+(250,1.0101088188689)
+(300,1.01475954313736)
+(9700,0.643857114937704)
+(9750,0.643963363580767)
+(9800,0.644067903632787)
+(9850,0.644170772013437)
+(9900,0.644272004637651)
+(9950,0.64437163644866)
+(10000,0.644469701449786)
+};
+        
+            \end{axis}
+        \end{tikzpicture}}
+\end{figure}
+
+
+\lstset{language=c++, extendedchars=true, numbers=left, frame=single, frameround = tttt, keepspace=true, breaklines=true}
+
+\section{Листинг кода}
+
+
+\subsection{Из файла} 
+\lstset{language=C++,numbers=left, stepnumber=1, numberstyle=\normalfont, numbersep=15pt, firstnumber = 1, linerange=1-100, frame=single, breaklines=true, framesep=10pt, xleftmargin=1em}
+\lstinputlisting[caption={Пример большого листинга},label={lstX}]{Gradient_file.m}
+
+\lstinputlisting[caption = test, label ={code:test1}]{code/3.cpp}
+
+\subsection{Самописный}
+
+\begin{lstlisting}[caption = test]
+    #include <iostream>
+
+    using namespace std;
+\end{lstlisting}

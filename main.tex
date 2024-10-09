@@ -1,0 +1,43 @@
+\documentclass[a4paper,14pt]{extarticle}%Формат бумаги А4, 14 кегль.
+
+%withdeprecated за место extarticle
+
+\input{settings/preamble.tex} %преамбула
+\input{settings/comand list} % сокращения больших конструкций
+
+
+
+\setcounter{page}{1}% С какой страницы начать отсчёт
+
+%\includepdf[pages = {1, 3-7}]{sections/tituls.pdf} для вставки ПДФ страниц (титульников например)
+
+
+
+%\usepackage[settings]{markdown}
+
+\begin{document}
+%    \pagestyle{plain}
+%    \markdownInput{план_доклада.md} % вызов текста плана доклада
+%\input{sections/titul}
+\pagestyle{empty}
+    \begin{center}
+        \tableofcontents
+    \end{center}
+    	\newpage
+    \pagestyle{plain}
+%\sokraseniya % Команда на генерацию списка сокращений
+%\input{sections/0-nomenclature} % список терминов и сокращений
+%\input{sections/1-introduction} %введение
+%\newpage
+\input{example}
+
+
+
+%\newpage
+%\bibliography{bibliography.bib} % включает только то, на что есть цитата
+%\addcontentsline{toc}{section}{Список использованных источников}
+%\newpage
+%\input{sections/applications}
+%\nocite{*} % Вообще все документы в списке литературы
+\end{document}
+
