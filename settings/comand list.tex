@@ -20,3 +20,76 @@
     \begin{center} \printnomenclature[5em] \newpage \end{center}
 }
 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% карточки
+\newcommand{\descartspel}[8]{
+
+%\begin{tcolorbox}[size=small,
+%tile,
+%%colback=black!5,
+%%colbacktitle=white!30!black,
+%%title=My table,
+%hbox,
+%center,
+%%center title,
+%before upper*=\begin{tabular}{|p{1cm}|p{1cm}|p{1cm}|},
+%after upper*=\end{tabular},
+%]
+\centering
+\begin{tabular}[b]{|m{1.2cm}|m{1.2cm}|m{1.2cm}|}
+%\multicolumn{2}{cc}{Title}\\
+\hline
+\multicolumn{2}{|m{2cm}|}{#1} & #2 \\ \hline
+\tiny Время накладывания & \tiny Длительность  & \tiny Дистанция \\ %\hline
+\large #3 & \large #4 & \large #5 \\ \hline
+\large #6 & \begin{tabular}{c}
+\begin{tikzpicture} \node[shape=circle, draw] {\large #7} \end{tikzpicture}\end{tabular} & \large #8 \\ \hline
+\end{tabular}
+%\end{tcolorbox}
+}
+
+
+
+\newcommand{\dcartspel}[3]{
+\begin{tcolorbox}[%watermark graphics=Artificer.png,
+                  %watermark opacity=0.25,
+                  enhanced jigsaw,
+                  %skin=bicolor,
+                  widget,
+                  colback=black!2!white,% background
+                  %colbacklower=yellow!20!white,
+                  width=62mm,% Use 5cm total width,
+                  arc=1mm, auto outer arc,
+                  boxrule=4pt,
+                  % frame style={left color=red!75!black, right color=blue!75!black}, %наложение градиента
+                  colframe=white!75!black,% black frame colour
+                  %frame style image=3.jpg,
+                  fonttitle=\bfseries\centering,
+                  colbacktitle=black!75!black!1!white,
+%                  drop shadow={Maroon!50!gray!80}
+                height = 87mm,
+                title=#1,
+                coltitle=black,attach boxed title to top center=
+{yshift=-0.25mm-\tcboxedtitleheight/2,yshifttext=2mm-\tcboxedtitleheight/2},
+boxed title style={boxrule=0.5mm,
+frame code={ \path[tcb fill frame] ([xshift=-4mm]frame.west)
+-- (frame.north west) -- (frame.north east) -- ([xshift=4mm]frame.east)
+-- (frame.south east) -- (frame.south west) -- cycle; },
+interior code={ \path[tcb fill interior] ([xshift=-2mm]interior.west)
+-- (interior.north west) -- (interior.north east)
+-- ([xshift=2mm]interior.east) -- (interior.south east) -- (interior.south west)
+-- cycle;} }]
+
+
+#2
+
+\tcblower
+#3
+
+\end{tcolorbox}
+}

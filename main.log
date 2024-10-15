@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.10.9)  13 OCT 2024 16:14
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.10.15)  15 OCT 2024 03:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1208,14 +1208,203 @@ Type  H <return>  for immediate help.
 l.224 ^^Icommentstyle=\scriptsize}
                                   
 ? 
-) (/usr/share/texmf-dist/tex/latex/bookmark/bookmark.sty
+(/usr/share/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 
 (/usr/share/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
 File: bkm-dvipdfm.def 2023-12-10 v1.31 bookmark driver for dvipdfm (HO)
 \BKM@id=\count374
 ))
-(./settings/comand list.tex) (./main.aux)
+(/usr/share/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
+\c@tracingmulticols=\count375
+\mult@box=\box89
+\multicol@leftmargin=\dimen348
+\c@unbalance=\count376
+\c@collectmore=\count377
+\doublecol@number=\count378
+\multicoltolerance=\count379
+\multicolpretolerance=\count380
+\full@width=\dimen349
+\page@free=\dimen350
+\premulticols=\dimen351
+\postmulticols=\dimen352
+\multicolsep=\skip116
+\multicolbaselineskip=\skip117
+\partial@page=\box90
+\last@line=\box91
+\mc@boxedresult=\box92
+\maxbalancingoverflow=\dimen353
+\mult@rightbox=\box93
+\mult@grightbox=\box94
+\mult@firstbox=\box95
+\mult@gfirstbox=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\@tempa=\box124
+\@tempa=\box125
+\@tempa=\box126
+\@tempa=\box127
+\@tempa=\box128
+\@tempa=\box129
+\@tempa=\box130
+\@tempa=\box131
+\@tempa=\box132
+\c@minrows=\count381
+\c@columnbadness=\count382
+\c@finalcolumnbadness=\count383
+\last@try=\dimen354
+\multicolovershoot=\dimen355
+\multicolundershoot=\dimen356
+\mult@nat@firstbox=\box133
+\colbreak@box=\box134
+\mc@col@check@num=\count384
+)
+(/usr/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
+
+(/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks66
+\verbatim@line=\toks67
+\verbatim@in@stream=\read4
+)
+(/usr/share/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box135
+\tcb@upperbox=\box136
+\tcb@lowerbox=\box137
+\tcb@phantombox=\box138
+\c@tcbbreakpart=\count385
+\c@tcblayer=\count386
+\c@tcolorbox@number=\count387
+\l__tcobox_tmpa_box=\box139
+\l__tcobox_tmpa_dim=\dimen357
+\tcb@temp=\box140
+\tcb@temp=\box141
+\tcb@temp=\box142
+\tcb@temp=\box143
+
+(/usr/share/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '6.2.0'
+\c@tcbrastercolumn=\count388
+\c@tcbrasterrow=\count389
+\c@tcbrasternum=\count390
+\c@tcbraster=\count391
+) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.2.0'
+(/usr/share/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
+Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
+
+(/usr/share/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty
+Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
+)
+(/usr/share/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
+File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
+\l__tikzfill_img_box=\box144
+))
+(/usr/share/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.2.0'
+)) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.2.0'
+(/usr/share/texmf-dist/tex/latex/pdfcol/pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+Package pdfcol Info: Interface disabled because of missing PDF mode of pdfTeX.
+)
+Package pdfcol Info: pdfTeX's color stacks are not available.
+\tcb@testbox=\box145
+\tcb@totalupperbox=\box146
+\tcb@totallowerbox=\box147
+)
+(/usr/share/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '6.2.0'
+) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.2.0'
+) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '6.2.0'
+\tcbfitdim=\dimen358
+\tcb@lowerfitdim=\dimen359
+\tcb@upperfitdim=\dimen360
+\tcb@cur@hbadness=\count392
+) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.tex
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.2.0'
+(/usr/share/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '6.2.0'
+(/usr/share/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '6.2.0'
+(/usr/share/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '6.2.0'
+)
+\c@tcblisting=\count393
+))
+Package tcolorbox Info: Library `listingsutf8' is compatible with pdftex only. 
+Library `listings` is loaded instead. on input line 29.
+) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '6.2.0'
+) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbmagazine.code.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '6.2.0'
+) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbvignette.code.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '6.2.0'
+
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+fadings.code.tex
+File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
+Library (tcolorbox): 'tcbposter.code.tex' version '6.2.0'
+))) (/usr/share/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
+
+(/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen361
+\ar@mcellbox=\box148
+\extrarowheight=\dimen362
+\NC@list=\toks68
+\extratabsurround=\skip118
+\backup@length=\skip119
+\ar@cellbox=\box149
+)
+\TX@col@width=\dimen363
+\TX@old@table=\dimen364
+\TX@old@col=\dimen365
+\TX@target=\dimen366
+\TX@delta=\dimen367
+\TX@cols=\count394
+\TX@ftn=\toks69
+) (./settings/comand list.tex) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -1229,8 +1418,7 @@ LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
 7.
-
-(/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 17.
@@ -1250,17 +1438,17 @@ LaTeX Info: Redefining \th on input line 17.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count375
-\scratchdimen=\dimen348
-\scratchbox=\box89
-\nofMPsegments=\count376
-\nofMParguments=\count377
-\everyMPshowfont=\toks66
-\MPscratchCnt=\count378
-\MPscratchDim=\dimen349
-\MPnumerator=\count379
-\makeMPintoPDFobject=\count380
-\everyMPtoPDFconversion=\toks67
+\scratchcounter=\count395
+\scratchdimen=\dimen368
+\scratchbox=\box150
+\nofMPsegments=\count396
+\nofMParguments=\count397
+\everyMPshowfont=\toks70
+\MPscratchCnt=\count398
+\MPscratchDim=\dimen369
+\MPnumerator=\count399
+\makeMPintoPDFobject=\count400
+\everyMPtoPDFconversion=\toks71
 )
 ! Undefined control sequence.
 <argument> \ifnum \pdfshellescape 
@@ -1290,9 +1478,9 @@ Package caption Info: End \AtBeginDocument code.
 (/usr/share/texmf-dist/tex/latex/floatrow/fr-longtable.sty
 Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
 
-\flrow@LT@lasthead=\box90
-\flrow@LT@prelastfoot=\box91
-\c@FBLTpage=\count381
+\flrow@LT@lasthead=\box151
+\flrow@LT@prelastfoot=\box152
+\c@FBLTpage=\count401
 )
 (/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
@@ -1404,7 +1592,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 17.
 Package hyperref Info: Link coloring OFF on input line 17.
-\c@lstlisting=\count382
+\c@lstlisting=\count402
 Package tocbasic Info: setting babel extension for `lol' on input line 17.
 (./main.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
@@ -1712,24 +1900,24 @@ l.172 ... листинга},label={lstX}]{Gradient_file.m}
 (./code/3.cpp [4]) [5]
 ! Missing number, treated as zero.
 <to be read again> 
-                   Д
-l.190  Д
+                   д
+l.190  д
         ва колонка.
 ? 
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
-                   Д
-l.190  Д
+                   д
+l.190  д
         ва колонка.
 ? 
 
-! Package calc Error: `Д' invalid at this point.
+! Package calc Error: `д' invalid at this point.
 
 See the calc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.190  Д
+l.190  д
         ва колонка.
 ? 
 
@@ -1744,18 +1932,18 @@ Overfull \hbox (42.47577pt too wide) in paragraph at lines 190--191
 
 ! Missing number, treated as zero.
 <to be read again> 
-                   Д
+                   д
 l.191 \end{minipage}
                     
 ? 
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
-                   Д
+                   д
 l.191 \end{minipage}
                     
 ? 
 
-! Package calc Error: `Д' invalid at this point.
+! Package calc Error: `д' invalid at this point.
 
 See the calc package documentation for explanation.
 Type  H <return>  for immediate help.
@@ -1764,6 +1952,140 @@ Type  H <return>  for immediate help.
 l.191 \end{minipage}
                     
 ? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
+[]\TU/TimesNewRoman(0)/m/n/14.4 Соответственно туть можно
+ []
+
+! Illegal parameter number in definition of \kvtcb@title.
+<to be read again> 
+                   1
+l.309 environment upper=itemize]
+                                
+? 
+Runaway argument?
+! Paragraph ended before \pgfkeys@addpath was complete.
+<to be read again> 
+                   \par 
+l.309 environment upper=itemize]
+                                
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \scan_stop: 
+l.309 environment upper=itemize]
+                                
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \scan_stop: 
+l.309 environment upper=itemize]
+                                
+? 
+Runaway argument?
+! Paragraph ended before \pgfkeys@splitter was complete.
+<to be read again> 
+                   \par 
+l.309 environment upper=itemize]
+                                
+? 
+! You can't use `macro parameter character #' in internal vertical mode.
+\kvtcb@title ->##
+                 1
+l.309 environment upper=itemize]
+                                
+? 
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.311 ^^I\item 1
+                2345687
+? 
+
+Underfull \hbox (badness 10000) detected at line 311
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.312 ^^I\item q
+                we
+? 
+
+Underfull \hbox (badness 10000) detected at line 312
+[][]
+ []
+
+
+! Package xcolor Error: Undefined color `Salmon'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.332 ... tabularx={X||Y|Y|Y|Y||Y},title=My table]
+                                                  
+? 
+! Undefined control sequence.
+\kvtcb@before@upper ...e \CT@arc@ \arrayrulecolor 
+                                                  {tcbcolframe}\def \arrayst...
+l.332 ... tabularx={X||Y|Y|Y|Y||Y},title=My table]
+                                                  
+? 
+
+Overfull \hbox (68.87518pt too wide) in paragraph at lines 332--338
+[]\TU/lmss/m/n/14.4 tcbcolframe[] 
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+[]\TU/TimesNewRoman(0)/m/n/12 Вы указываете на одно
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+\TU/TimesNewRoman(0)/m/n/12 существо, которое
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+\TU/TimesNewRoman(0)/m/n/12 дистанции. Цель должна
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+\TU/TimesNewRoman(0)/m/n/12 преуспеть в спасброске
+ []
+
+
+Underfull \hbox (badness 2635) in paragraph at lines 347--347
+\TU/TimesNewRoman(0)/m/n/12 Мудрости, иначе получит
+ []
+
+
+Underfull \hbox (badness 4479) in paragraph at lines 347--347
+\TU/TimesNewRoman(0)/m/n/12 1к8 урона некротической
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+\TU/TimesNewRoman(0)/m/n/12 1к8 она получает 1к12
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+\TU/TimesNewRoman(0)/m/n/12 урона некротической
+ []
+
 )
 
 ! LaTeX Error: \begin{minipage} on input line 189 ended by \end{document}.
@@ -1775,7 +2097,7 @@ Type  H <return>  for immediate help.
 l.41 \end{document}
                    
 ? 
-[6] (./main.aux)
+[7] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1791,12 +2113,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 ### semi simple group (level 1) entered at line 189 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 60151 strings out of 476772
- 1506965 string characters out of 5803394
- 2620984 words of memory out of 5000000
- 81390 multiletter control sequences out of 15000+600000
- 562285 words of font info for 73 fonts, out of 8000000 for 9000
+ 65558 strings out of 476772
+ 1657347 string characters out of 5803393
+ 2642863 words of memory out of 5000000
+ 86707 multiletter control sequences out of 15000+600000
+ 562309 words of font info for 76 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 115i,11n,110p,765b,2120s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 115i,11n,110p,765b,2118s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (6 pages).
+Output written on main.pdf (7 pages).

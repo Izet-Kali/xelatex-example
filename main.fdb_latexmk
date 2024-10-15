@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1728825178.51653 "main.tex" "main.pdf" "main" 1728825180.48357 2
+["pdflatex"] 1728950703.43835 "main.tex" "main.pdf" "main" 1728950705.54011 2
   "/home/lansky/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/larm1440.tfm" 1728413118.47008 3256 3daaa33cf35cf3f354983aa3214ecd7f ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1727349926 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1727349926 1288 655e228510b4c2a1abe905c368440826 ""
@@ -178,10 +178,10 @@
   "/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1727349926 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "/usr/share/texmf-dist/tex/xelatex/xltxtra/xltxtra.sty" 1727349926 5686 8a29af4ad9d707b5280738995d050842 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1727349926 41588 b43d3e860a4f94167ee1e725ff526a72 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1728422537 7112993 728665eb6e869ab577b92bf653206657 ""
-  "main.aux" 1728825178.64113 2104 765d511bccdf60522c5c9b17de8e32ba "pdflatex"
-  "main.tex" 1728514732.98002 1424 08062fb5117d6aa564d41f4bded4127c ""
-  "settings/preamble.tex" 1728493139.83668 8728 f220d5a7d29d519c145bad4bfc6c472d ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1728946370 7113014 6b7c903b83462ec644d0420d8c873114 ""
+  "main.aux" 1728950705.49347 2343 a8da706b7079487e0b9164d9188f3c3f "pdflatex"
+  "main.tex" 1728950003.16012 1424 08062fb5117d6aa564d41f4bded4127c ""
+  "settings/preamble.tex" 1728945184.02003 8837 c6a370906d2915b735893865c2f0fa95 ""
   (generated)
   "main.aux"
   "main.log"
