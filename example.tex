@@ -124,9 +124,9 @@ ESC - контроллер двигателя & КД, ESC & 466369\\ \hline
 
 
 
-% графики
+\section{Графики} 
 
-% график по координатам
+\subsection{График по координатам}
 
 
 
@@ -160,6 +160,199 @@ ESC - контроллер двигателя & КД, ESC & 466369\\ \hline
             \end{axis}
         \end{tikzpicture}}
 \end{figure}
+
+
+\subsection{График функции}
+
+
+
+\begin{figure}[H]
+    \centering
+    \fbox{
+        \begin{tikzpicture}
+            \begin{axis}[grid = major,
+            %grid = both,
+                xlabel = {$x$},
+                ylabel = {$y$},
+                title = {Название},
+                height = {7cm},
+                width = {\linewidth},
+                %xmin = 0,
+                %xmax = 30,
+            ]
+            \addplot[black] {e^x};
+        
+            \end{axis}
+        \end{tikzpicture}}
+\end{figure}
+
+
+
+
+\begin{figure}[H]
+    \centering
+    \fbox{
+        \begin{tikzpicture}
+            \begin{axis}[%grid = major,
+            grid = both,
+                samples = 100,
+                xlabel = {$x$},
+                ylabel = {$y$},
+                title = {Пример для синуса},
+                height = {7cm},
+                width = {\linewidth},
+                %xmin = 0,
+                %xmax = 30,
+            ]
+            \addplot[black] {sin(deg(x))};
+        
+            \end{axis}
+        \end{tikzpicture}}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \fbox{
+        \begin{tikzpicture}
+            \begin{axis}[%grid = major,
+            grid = both,
+                samples = 1000,
+                xlabel = {$x$},
+                ylabel = {$y$},
+                title = {...},
+                height = {7cm},
+                width = {\linewidth},
+                %xmin = 0,
+                %xmax = 30,
+                legend pos = north west,
+            ]
+            \legend{$\frac{sin(x)}{x}$}%, $\frac{sin(x*x)}{x*x}$}
+            \addplot[black] {sin(deg(x))/x};
+            %\addplot[black] {sin(deg(x*x))/(x*x)};
+        
+            \end{axis}
+        \end{tikzpicture}}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \fbox{
+        \begin{tikzpicture}
+            \begin{axis}[grid = major,
+            %grid = both,
+                samples = 100,
+                xlabel = {$x$},
+                ylabel = {$y$},
+                title = {Меандр},
+                height = {7cm},
+                width = {\linewidth},
+                %xmin = 0,
+                %xmax = 30,
+            ]
+            \addplot[black] {sin(deg(x)) + (sin(deg(x*3))/3) + (sin(deg(x*5))/5) + (sin(deg(x*7))/7)};
+        
+            \end{axis}
+        \end{tikzpicture}}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \fbox{
+        \begin{tikzpicture}
+            \begin{axis}[grid = major,
+            %grid = both,
+                samples = 100,
+                xlabel = {$x$},
+                ylabel = {$y$},
+                title = {Пила},
+                height = {7cm},
+                width = {\linewidth},
+                %xmin = 0,
+                %xmax = 30,
+            ]
+            \addplot[black] {sin(deg(x)) - (sin(deg(x*2))/2) + (sin(deg(x*3))/3) - (sin(deg(x*4))/4) + (sin(deg(x*5))/5) - (sin(deg(x*6))/6) + (sin(deg(x*7))/7)};
+        
+            \end{axis}
+        \end{tikzpicture}}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \fbox{
+        \begin{tikzpicture}
+            \begin{axis}[grid = major,
+            %grid = both,
+                samples = 100,
+                xlabel = {$x$},
+                ylabel = {$y$},
+                title = {Пила},
+                height = {7cm},
+                width = {\linewidth},
+                %xmin = 0,
+                %xmax = 30,
+            ]
+            \addplot[black] {-sin(deg(x)) + (sin(deg(x*2))/2) - (sin(deg(x*3))/3) + (sin(deg(x*4))/4) - (sin(deg(x*5))/5) + (sin(deg(x*6))/6) - (sin(deg(x*7))/7)};
+        
+            \end{axis}
+        \end{tikzpicture}}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \fbox{
+        \begin{tikzpicture}
+            \begin{axis}[grid = major,
+            %grid = both,
+                samples = 200,
+                xlabel = {$x$},
+                ylabel = {$y$},
+                title = {Умножать сигналы друг на друга тоже можно))},
+                height = {7cm},
+                width = {\linewidth},
+                %xmin = 0,
+                %xmax = 30,
+            ]
+            \addplot[blue] {sin(deg(x))};
+            \addplot[red, dashed] {sin(deg(10*x))};
+            \addplot[black] {sin(deg(10*x)) * sin(deg(x))};
+        
+            \end{axis}
+        \end{tikzpicture}}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \fbox{
+        \begin{tikzpicture}
+            \begin{axis}[grid = major,
+            %grid = both,
+                samples = 200,
+                xlabel = {$x$},
+                ylabel = {$y$},
+                title = {Умножение меандра на синус},
+                height = {7cm},
+                width = {\linewidth},
+                %xmin = 0,
+                %xmax = 30,
+            ]
+            \addplot[blue] {sin(deg(x))};
+	\addplot [teal,const plot,samples=14]
+{sin(deg(x))};
+            \addplot[red, dashed] {(sin(deg(4*4*x))  + sin(deg(4*4*x*3))/3)  + (sin(deg(4*4*x*5))/5)  + (sin(deg(4*4*x*7))/7))};
+            \addplot[black] {sin(deg(x)) * (sin(deg(4*4*x))  + sin(deg(4*4*x*3))/3)  + (sin(deg(4*4*x*5))/5)  + (sin(deg(4*4*x*7))/7))};
+	
+        
+            \end{axis}
+        \end{tikzpicture}}
+\end{figure}
+
+
 
 
 \lstset{language=c++, extendedchars=true, numbers=left, frame=single, frameround = tttt, keepspace=true, breaklines=true}
